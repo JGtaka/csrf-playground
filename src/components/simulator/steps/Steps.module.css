@@ -1,0 +1,301 @@
+.stepBlock {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeSlideUp 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stepBlockFirst {
+  padding-top: 48px;
+}
+
+.stepBlockLast {
+  padding-bottom: 48px;
+}
+
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.iconBlue {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.iconAlert {
+  background: #ffdad6;
+  color: #ba1a1a;
+}
+
+.iconNeutral {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.iconDanger {
+  background: #93000a;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* ========== Step 1: Session Card ========== */
+.sessionCard {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  flex-shrink: 0;
+}
+
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionName {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sessionStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  line-height: 15px;
+  color: #16a34a;
+}
+
+/* ========== Step 2: Trap Card ========== */
+.trapCard {
+  width: 100%;
+  background: #fdf2f8;
+  border: 1px solid #fce7f3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.trapImage {
+  width: 100%;
+  height: 96px;
+  background: linear-gradient(
+    135deg,
+    #fed7aa 0%,
+    #fb923c 30%,
+    #fb7185 70%,
+    #c084fc 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  filter: saturate(1.2);
+}
+
+.trapBody {
+  background: #ffffff;
+  padding: 8px;
+}
+
+.trapTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #db2777;
+  font-weight: 600;
+}
+
+.trapDesc {
+  font-size: 10px;
+  line-height: 15px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* ========== Step 3: Request Flight ========== */
+.flightCard {
+  width: 100%;
+  height: 117.5px;
+  background: #f8fafc;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.endpoint {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.endpointLeft {
+  left: 16px;
+}
+
+.endpointRight {
+  right: 16px;
+}
+
+.endpointIcon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+}
+
+.endpointLabel {
+  font-size: 9px;
+  line-height: 13.5px;
+  font-weight: 700;
+  color: #191b23;
+  letter-spacing: 0.3px;
+}
+
+.envelope {
+  position: absolute;
+  top: 50%;
+  background: #ffffff;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  padding: 5px 9px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 8px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #004ac6;
+  white-space: nowrap;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+  animation: flyAcross 1.6s ease-in-out infinite;
+}
+
+.envelopeBadge {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 9999px;
+  padding: 1px 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 8px;
+  color: #92400e;
+}
+
+@keyframes flyAcross {
+  0% {
+    left: 22%;
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    left: 60%;
+    transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    left: 22%;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* ========== Step 4: Result Card ========== */
+.resultCard {
+  width: 100%;
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resultUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resultAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #334155;
+  flex-shrink: 0;
+}
+
+.resultName {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.resultText {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.resultActions {
+  display: flex;
+  gap: 12px;
+  color: #94a3b8;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

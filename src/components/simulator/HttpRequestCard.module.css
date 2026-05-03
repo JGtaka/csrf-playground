@@ -1,0 +1,132 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #c3c6d7;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  animation: fadeSlideIn 280ms ease-out;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #191b23;
+}
+
+.heading svg {
+  color: #2563eb;
+}
+
+.codeBlock {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Liberation Mono', ui-monospace, 'SFMono-Regular', Menlo,
+    Consolas, monospace;
+  font-size: 11px;
+  line-height: 18px;
+  color: #f1f5f9;
+  overflow-x: auto;
+}
+
+.method {
+  color: #60a5fa;
+  font-weight: 500;
+}
+
+.line {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.headerKey {
+  color: #64748b;
+}
+
+.headerVal {
+  color: #f1f5f9;
+}
+
+.highlight {
+  color: #fbbf24;
+}
+
+.glossary {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.glossaryHeading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.glossaryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.glossaryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.glossaryTerm {
+  align-self: flex-start;
+  font-family: 'Liberation Mono', ui-monospace, 'SFMono-Regular', Menlo,
+    Consolas, monospace;
+  font-size: 11px;
+  line-height: 16px;
+  color: #0f172a;
+  background: #e2e8f0;
+  padding: 1px 6px;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.glossaryDesc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #545f73;
+}
+
+.note {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 4px;
+  padding: 9px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #92400e;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
